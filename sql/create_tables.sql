@@ -1,0 +1,5 @@
+CREATE TABLE raw_videos (
+    id SERIAL PRIMARY KEY,
+    fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    payload JSONB
+);

@@ -1,0 +1,30 @@
+[2026-05-13T19:44:26.199+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-13T19:44:26.209+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_pipeline.transform_videos manual__2026-05-13T19:44:24.983001+00:00 [queued]>
+[2026-05-13T19:44:26.211+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_pipeline.transform_videos manual__2026-05-13T19:44:24.983001+00:00 [queued]>
+[2026-05-13T19:44:26.211+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2026-05-13T19:44:26.214+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): transform_videos> on 2026-05-13 19:44:24.983001+00:00
+[2026-05-13T19:44:26.217+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_pipeline', 'transform_videos', 'manual__2026-05-13T19:44:24.983001+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/youtube_pipeline.py', '--cfg-path', '/tmp/tmpyyspo1g1']
+[2026-05-13T19:44:26.218+0000] {standard_task_runner.py:91} INFO - Job 32: Subtask transform_videos
+[2026-05-13T19:44:26.218+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=362) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-05-13T19:44:26.218+0000] {standard_task_runner.py:63} INFO - Started process 363 to run task
+[2026-05-13T19:44:26.233+0000] {task_command.py:426} INFO - Running <TaskInstance: youtube_pipeline.transform_videos manual__2026-05-13T19:44:24.983001+00:00 [running]> on host ee1b244f7678
+[2026-05-13T19:44:26.259+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='youtube_pipeline' AIRFLOW_CTX_TASK_ID='transform_videos' AIRFLOW_CTX_EXECUTION_DATE='2026-05-13T19:44:24.983001+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-13T19:44:24.983001+00:00'
+[2026-05-13T19:44:26.260+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-13T19:44:26.267+0000] {logging_mixin.py:188} INFO - Found 11 videos
+[2026-05-13T19:44:26.268+0000] {logging_mixin.py:188} INFO - Skipping existing video: if-3mU6PkHs
+[2026-05-13T19:44:26.268+0000] {logging_mixin.py:188} INFO - Skipping existing video: bmUM5CKbnRY
+[2026-05-13T19:44:26.268+0000] {logging_mixin.py:188} INFO - Skipping existing video: bUWTvkdii-M
+[2026-05-13T19:44:26.268+0000] {logging_mixin.py:188} INFO - Skipping existing video: a4brgDNNJUo
+[2026-05-13T19:44:26.268+0000] {logging_mixin.py:188} INFO - Skipping existing video: bn4T6i4BOYo
+[2026-05-13T19:44:26.268+0000] {logging_mixin.py:188} INFO - Skipping existing video: i44HKbVgD_k
+[2026-05-13T19:44:26.269+0000] {logging_mixin.py:188} INFO - Skipping existing video: A3wbXueNTf4
+[2026-05-13T19:44:26.269+0000] {logging_mixin.py:188} INFO - Skipping existing video: NkjDHQ86Nzg
+[2026-05-13T19:44:26.269+0000] {logging_mixin.py:188} INFO - Skipping existing video: _FKkCBSZgBw
+[2026-05-13T19:44:26.269+0000] {logging_mixin.py:188} INFO - Skipping existing video: uuO6cc7ZTGA
+[2026-05-13T19:44:26.269+0000] {logging_mixin.py:188} INFO - Videos transformed and loaded!
+[2026-05-13T19:44:26.269+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-05-13T19:44:26.269+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-13T19:44:26.272+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=youtube_pipeline, task_id=transform_videos, execution_date=20260513T194424, start_date=20260513T194426, end_date=20260513T194426
+[2026-05-13T19:44:26.320+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-13T19:44:26.327+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-13T19:44:26.327+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
